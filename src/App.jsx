@@ -5,8 +5,10 @@ import Hero from "./sections/Hero";
 function App() {
   return (
     <>
-      <Navbar  />
-      {/* <Hero /> */}
+      <div className="font-display2 overflow-x-hidden">
+        <Navbar />
+        {/* <Hero /> */}
+      </div>
     </>
   );
 }
