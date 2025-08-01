@@ -5,9 +5,8 @@ import Hero from "./sections/Hero";
 function App() {
   return (
     <>
-      <div className="font-display2 overflow-x-hidden">
+      <div>
         <Navbar />
-        {/* <Hero /> */}
       </div>
     </>
   );
