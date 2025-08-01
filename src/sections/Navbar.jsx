@@ -11,7 +11,7 @@ const Navbar = () => {
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="bg-slate-700 p-5 text-white ">
+    <nav className="bg-img-gradient p-5 text-white ">
       <div className="flex justify-between items-center mx-auto container">
         {/* <h1>Sohel Shahid</h1> */}
         <Link to="/">
