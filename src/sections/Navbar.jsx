@@ -11,18 +11,21 @@ const Navbar = () => {
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="bg-slate-700 p-3 text-white ">
+    <nav className="bg-slate-700 p-5 text-white ">
       <div className="flex justify-between items-center mx-auto container">
         {/* <h1>Sohel Shahid</h1> */}
-        <img
-          src={ssLogo}
-          alt=""
-          className="bg-slate-50 h-10 w-20 rounded-full cursor-pointer"
-        />
+        <Link to="/">
+          {" "}
+          <img
+            src={ssLogo}
+            alt=""
+            className="bg-slate-50 h-10 w-20 rounded-full cursor-pointer hover:scale-105 transition-all duration-300 "
+          />
+        </Link>
 
         {/* navbar for large screen */}
         <di className="">
-          <ul className="hidden sm:flex space-x-5  ">
+          <ul className="hidden md:flex space-x-5  ">
             <li>
               <Link to="/hi" className={styles.link}>
                 Home
@@ -51,12 +54,12 @@ const Navbar = () => {
           </ul>
         </di>
 
-        <button className="bg-white text-slate-700 px-2 py-2 rounded-full cursor-pointer text-md font-semibold hidden sm:block">
+        <button className="bg-white text-slate-700 px-4 py-2 rounded-full cursor-pointer text-md font-semibold hidden md:block hover:scale-105 transition-all duration-300">
           Hired Me
         </button>
 
         <div
-          className="cursor-pointer block sm:hidden"
+          className="cursor-pointer block md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
@@ -69,7 +72,7 @@ const Navbar = () => {
 
       {/* navbar for small screen */}
       {isMenuOpen && (
-        <ul className="flex flex-col space-y-5 mt-4 text-center sm:hidden">
+        <ul className="flex flex-col space-y-5 mt-4 text-center md:hidden">
           <li>
             <Link to="/hi" className={`${styles.link} block`}>
               Home
