@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
+import TechnicalProficiency from "./sections/TechnicalProficiency";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div>
         <Navbar />
         <Hero />
+        <TechnicalProficiency />
       </div>
     </>
   );

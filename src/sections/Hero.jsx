@@ -5,6 +5,8 @@ import { IoLogoJavascript } from "react-icons/io";
 import { FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
+import { stats } from "../utils/data";
+import StateInCard from "../components/StateInCard";
 
 const Hero = () => {
   return (
@@ -50,7 +52,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div>stats</div>
+      <div className="flex gap-12 mt-16 md:mt-24 flex-wrap  items-center justify-center">
+        {stats.map((stat, i) => (
+          <StateInCard key={i} count={stat.count} label={stat.label} />
+        ))}
+      </div>
     </section>
   );
 };
