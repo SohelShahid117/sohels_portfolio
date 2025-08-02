@@ -28,10 +28,10 @@ const Hero = () => {
             Express.js, React.js & Next.js !
           </p>
           <div className="flex justify-center md:justify-start gap-4 md:gap-8 mt-5">
-            <button className="text-[#4098da] px-4 py-2 border-2 border-primaryy text-lg font-semibold rounded-full hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out">
+            <button className="text-[#4098da] px-4 py-2 border-2 border-primaryy text-lg font-semibold rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
               View My Work
             </button>
-            <button className="bg-img-gradient text-white font-semibold text-lg px-4 py-2 rounded-full hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out">
+            <button className="bg-img-gradient text-white font-semibold text-lg px-4 py-2 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
               Download Resume
             </button>
           </div>

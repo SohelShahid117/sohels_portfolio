@@ -18,6 +18,7 @@ import { SiExpress, SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdSyncProblem } from "react-icons/md";
 
 export const skills = [
   {
@@ -100,6 +101,15 @@ export const skills = [
     type: "tools",
     description:
       "Git is a distributed version control system (DVCS) designed to track changes in source code during software development. In 2005, Linus Torvalds, who is also the creator of the Linux kernel, developed it. Today, more than 40 million people use Git universally. If you are a developer, DevOps engineer, or any professional in the tech industry, knowing Git is vital.",
+  },
+  {
+    id: 10,
+    icon: MdSyncProblem,
+    skill: "Problem Solving",
+    progress: 85,
+    type: "skills",
+    description:
+      "Problem solving is a core skill for software developers, involving identifying, analyzing, and resolving issues in code and systems. It encompasses understanding the problem, researching potential solutions, designing and implementing those solutions, and then testing and refining them. Effective problem-solving in development leads to efficient development processes, high-quality software, and innovative solutions",
   },
 ];
 export const skill_tabs = [

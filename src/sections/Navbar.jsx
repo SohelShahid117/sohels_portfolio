@@ -24,7 +24,7 @@ const Navbar = () => {
         </Link>
 
         {/* navbar for large screen */}
-        <di className="">
+        <div className="">
           <ul className="hidden md:flex space-x-5  ">
             <li>
               <Link to="/hi" className={styles.link}>
@@ -52,7 +52,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </di>
+        </div>
 
         <button className="bg-white text-slate-700 px-4 py-2 rounded-full cursor-pointer text-md font-semibold hidden md:block hover:scale-105 transition-all duration-300">
           Hired Me
