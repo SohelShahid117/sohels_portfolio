@@ -11,9 +11,7 @@ import {
 import projectImg1 from "../assets/images/project1.png";
 import projectImg2 from "../assets/images/project1.png";
 import projectImg3 from "../assets/images/project1.png";
-import projectImg4 from "../assets/images/project1.png";
-import projectImg5 from "../assets/images/project1.png";
-import projectImg6 from "../assets/images/project1.png";
+
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io";
@@ -135,7 +133,7 @@ export const stats = [
 export const about_me = [
   {
     content:
-      "Frontend development is an important part of web applications, and it is used to build dynamic and user-friendly web applications with an interactive user interface (UI). Many companies are hiring skilled Frontend developers with expertise in HTML, CSS, JavaScript, and modern frameworks and libraries like React, Vue.js, and Angular, offering handsome salaries to them.",
+      "Frontend development is an important part of web applications, and it is used to build dynamic and user-friendly web applications with an interactive user interface (UI). I skilled Frontend developers with expertise in HTML, CSS, JavaScript, and modern frameworks and libraries - React, Nodejs.",
     socialIcons: [
       { id: 1, label: "Facebook", icon: FaFacebook, link: "#" },
       { id: 2, label: "Instagram", icon: FaInstagram, link: "#" },
@@ -166,23 +164,5 @@ export const projects = [
       "Full Stack Travel Story App . Using MERN-MongoDB,Express JS,React,Node JS",
     image: projectImg3,
     tags: ["MongoDB", "Express JS", "React", "Node JS"],
-  },
-  {
-    id: 4,
-    title: "Responsive Portfolio Using React,Tailwind",
-    image: projectImg4,
-    tags: ["React", "Tailwind", "HTML", "CSS"],
-  },
-  {
-    id: 5,
-    title: "Full Stack notes App . Using MERN-MongoDB,Express JS,React,Node JS",
-    image: projectImg5,
-    tags: ["Express JS", "React", "Node JS"],
-  },
-  {
-    id: 4,
-    title: "Responsive Portfolio Using React,Tailwind",
-    image: projectImg6,
-    tags: ["HTML", "CSS"],
   },
 ];

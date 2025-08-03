@@ -54,7 +54,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <button className="bg-white text-slate-700 px-4 py-2 rounded-full cursor-pointer text-md font-semibold hidden md:block hover:scale-105 transition-all duration-300">
+        <button className="bg-white  text-slate-800 px-4 py-2 rounded-full cursor-pointer text-md font-semibold hidden md:block hover:scale-105 transition-all duration-300">
           Hired Me
         </button>
 

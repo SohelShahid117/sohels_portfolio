@@ -3,6 +3,8 @@ import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import TechnicalProficiency from "./sections/TechnicalProficiency";
 import AboutMe from "./sections/AboutMe";
+import MyProjects from "./sections/MyProjects";
+import ContactMe from "./sections/ContactMe";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Hero />
         <TechnicalProficiency />
         <AboutMe />
+        <MyProjects />
+        <ContactMe />
       </div>
     </>
   );

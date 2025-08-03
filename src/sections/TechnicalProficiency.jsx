@@ -42,9 +42,7 @@ const TechnicalProficiency = () => {
           {skillTabs.map((skl, i) => (
             <div key={i}>
               <SkillCard
-                icon={
-                  <skl.icon className="w-10 h-10 text-white bg-img-gradient rounded-2xl p-2" />
-                }
+                icon={<skl.icon className="w-10 h-10 text-white bg-img-gradient rounded-2xl p-2" />}
                 skillName={skl.skill}
                 progress={skl.progress}
                 description={skl.description}
