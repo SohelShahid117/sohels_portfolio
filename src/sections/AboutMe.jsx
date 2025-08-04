@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const AboutMe = () => {
   console.log(about_me);
   return (
-    <section className="p-5 container mx-auto">
+    <section id="about" className="p-5 container mx-auto">
       {/* <div className=""> */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-5 section-container">
         <h1 className="sm:hidden block text-3xl font-bold pb-8 text-blue-600">

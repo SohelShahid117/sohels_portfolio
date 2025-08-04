@@ -18,7 +18,7 @@ const TechnicalProficiency = () => {
   };
   console.log(activeTab);
   return (
-    <section className="bg-[#fbfeff] p-5 mt-10">
+    <section id="skills" className="bg-[#fbfeff] p-5 mt-10">
       <div className="container mx-auto">
         <div className="w-full  md:w-3/5 mx-auto">
           <h4 className="capitalize w-full  text-2xl md:text-4xl mt-3 bg-img-gradient text-transparent bg-clip-text font-bold text-center">
@@ -38,11 +38,13 @@ const TechnicalProficiency = () => {
           activeTab={activeTab}
           onChange={handleTabValueChange}
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 min-h-[400px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 min-h-[420px]">
           {skillTabs.map((skl, i) => (
             <div key={i}>
               <SkillCard
-                icon={<skl.icon className="w-10 h-10 text-white bg-img-gradient rounded-2xl p-2" />}
+                icon={
+                  <skl.icon className="w-10 h-10 text-white bg-img-gradient rounded-2xl p-2" />
+                }
                 skillName={skl.skill}
                 progress={skl.progress}
                 description={skl.description}

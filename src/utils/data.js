@@ -107,7 +107,16 @@ export const skills = [
     progress: 85,
     type: "skills",
     description:
-      "Problem solving is a core skill for software developers, involving identifying, analyzing, and resolving issues in code and systems. It encompasses understanding the problem, researching potential solutions, designing and implementing those solutions, and then testing and refining them. Effective problem-solving in development leads to efficient development processes, high-quality software, and innovative solutions",
+      "Problem solving is a core skill for software developers, involving identifying, analyzing, and resolving issues in code and systems. It encompasses understanding the problem, researching potential solutions, designing and implementing those solutions, and then testing and refining them. Effective problem-solving in development leads to efficient development processes, high-quality software, and innovative solutions,Git is a distributed version control system (DVCS) designed to track changes in source code during software development. In 2005, Linus Torvalds, who is also the creator of the Linux kernel, developed it. Today, more than 40 million people use Git universally. If you are a developer, DevOps engineer, or any professional in the tech industry, knowing Git is vital.",
+  },
+  {
+    id: 11,
+    icon: FaGitAlt,
+    skill: "Git",
+    progress: 92,
+    type: "tools",
+    description:
+      "Git is a distributed version control system (DVCS) designed to track changes in source code during software development. In 2005, Linus Torvalds, who is also the creator of the Linux kernel, developed it. Today, more than 40 million people use Git universally. If you are a developer, DevOps engineer, or any professional in the tech industry, knowing Git is vital.",
   },
 ];
 export const skill_tabs = [
@@ -151,12 +160,14 @@ export const projects = [
     title: "Full Stack notes App . Using MERN-MongoDB,Express JS,React,Node JS",
     image: projectImg1,
     tags: ["MongoDB", "Express JS", "React", "Node JS"],
+    url: "https://js-engineering-and-consultancy.vercel.app/",
   },
   {
     id: 2,
     title: "Responsive Portfolio Using React,Tailwind",
     image: projectImg2,
     tags: ["React", "Tailwind CSS"],
+    url: "https://project-doctor-care-with-tailwind-j.vercel.app/",
   },
   {
     id: 3,
@@ -164,5 +175,6 @@ export const projects = [
       "Full Stack Travel Story App . Using MERN-MongoDB,Express JS,React,Node JS",
     image: projectImg3,
     tags: ["MongoDB", "Express JS", "React", "Node JS"],
+    url: "https://js-engineering-and-consultancy.vercel.app/",
   },
 ];

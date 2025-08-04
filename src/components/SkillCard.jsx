@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const SkillCard = ({ icon, skillName, progress, description }) => {
   const [showFullContent, setShowFullContent] = useState(false);
 
-  const maxLength = 180;
+  const maxLength = 150;
   const truncatedContent = description.slice(0, maxLength);
   const shouldShowButton = description.length > maxLength;
 
@@ -19,8 +19,8 @@ const SkillCard = ({ icon, skillName, progress, description }) => {
           <div className="">{icon}</div>
           <div className="flex-1">
             <div className="flex items-center justify-between">
-              <p className="text-xl font-semibold text-black">{skillName}</p>
-              <p className="text-md text-primaryy font-medium">{progress} %</p>
+              <p className="text-md font-semibold text-black">{skillName}</p>
+              <p className="text-sm text-primaryy font-medium">{progress} %</p>
             </div>
             <div className="w-full bg-img-gradient h-2 mt-2 relative">
               <div
@@ -30,7 +30,7 @@ const SkillCard = ({ icon, skillName, progress, description }) => {
             </div>
           </div>
         </div>
-        <p className="text-md text-gray-700 text-justify mt-2">
+        <p className="text-sm text-gray-700 text-start mt-2">
           {showFullContent ? description : truncatedContent}
           {shouldShowButton && !showFullContent && "..."}
           {shouldShowButton && (

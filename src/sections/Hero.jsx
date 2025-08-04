@@ -52,7 +52,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex gap-12 mt-16 md:mt-24 flex-wrap  items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-16 md:mt-24 flex-wrap  items-center justify-center">
         {stats.map((stat, i) => (
           <StateInCard key={i} count={stat.count} label={stat.label} />
         ))}

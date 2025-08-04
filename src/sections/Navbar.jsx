@@ -27,29 +27,29 @@ const Navbar = () => {
         <div className="">
           <ul className="hidden md:flex space-x-5  ">
             <li>
-              <Link to="/hi" className={styles.link}>
+              <Link to="/" className={styles.link}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/hi" className={styles.link}>
+              <a href="#skills" className={styles.link}>
                 Skills
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/hi" className={styles.link}>
+              <a href="#about" className={styles.link}>
                 About Me
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/hi" className={styles.link}>
+              <a href="#projects" className={styles.link}>
                 Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/hi" className={styles.link}>
+              <a href="#contact" className={styles.link}>
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
