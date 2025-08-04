@@ -3,6 +3,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { GoClock } from "react-icons/go";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const ContactMe = () => {
   return (
@@ -116,7 +117,10 @@ const ContactMe = () => {
               placeholder="Your message to us..."
               className="textarea textarea-bordered w-full focus:outline-none"
             ></textarea>
-            <button className="btn bg-primaryy text-white rounded-lg">
+            <button
+              type="submit"
+              className="btn bg-primaryy text-white rounded-lg"
+            >
               Send Now
             </button>
           </form>

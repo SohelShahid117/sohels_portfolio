@@ -5,17 +5,22 @@ import TechnicalProficiency from "./sections/TechnicalProficiency";
 import AboutMe from "./sections/AboutMe";
 import MyProjects from "./sections/MyProjects";
 import ContactMe from "./sections/ContactMe";
+import Footer from "./sections/Footer";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
       <div>
         <Navbar />
-        <Hero />
+        {/* <Hero />
         <TechnicalProficiency />
         <AboutMe />
         <MyProjects />
-        <ContactMe />
+        <ContactMe /> */}
+
+        <main className="min-h-screen">{<Outlet />}</main>
+        <Footer />
       </div>
     </>
   );
