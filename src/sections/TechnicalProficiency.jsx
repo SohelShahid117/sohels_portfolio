@@ -24,12 +24,12 @@ const TechnicalProficiency = () => {
           <h4 className="capitalize w-full  text-2xl md:text-4xl mt-3 bg-img-gradient text-transparent bg-clip-text font-bold text-center">
             Technical Proficiency
           </h4>
-          <p className="text-md text-black mt-4 text-center ">
+          <p className="text-md md:text-lg text-black mt-4 text-justify">
             Technology is vast, and there are so many tools, platforms,
-            languages, frameworks coming out in the market. It doesn't matter as
+            languages, frameworks coming out in this field. It doesn't matter as
             I am an experienced developer. As a modern developer, I should know
             how to integrate modern technologies and use my technical skills in
-            my work to make a good product.
+            my project to make a good product.
           </p>
         </div>
 

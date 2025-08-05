@@ -134,10 +134,10 @@ export const menu_links = [
   { id: 5, label: "Contact", offset: -80, to: "/contact" },
 ];
 export const stats = [
-  { id: 1, count: "10", label: "Years of \nExperience" },
-  { id: 2, count: "12", label: "Certificate \nEarned" },
-  { id: 3, count: "43", label: "Projects \nCompleted" },
-  { id: 4, count: "37+", label: "Happy \nClients" },
+  { id: 1, count: "2", label: "Years of \nExperience" },
+  { id: 2, count: "3", label: "Certificate \nEarned" },
+  { id: 3, count: "12", label: "Projects \nCompleted" },
+  { id: 4, count: "3", label: "Happy \nClients" },
 ];
 export const about_me = [
   {

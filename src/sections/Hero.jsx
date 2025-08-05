@@ -7,13 +7,14 @@ import { SiMongodb } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { stats } from "../utils/data";
 import StateInCard from "../components/StateInCard";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
     <section className="p-5 container mx-auto">
       <div className=" flex flex-col-reverse md:flex-row gap-14 items-center justify-between mt-10 md:mt-5 ">
         <div className="text-center md:text-left w-full md:w-2/3">
-          <h3 className="text-xl md:text-2xl font-medium text-black">
+          <h3 className="text-lg  md:text-2xl font-medium text-black">
             {" "}
             <PiHandWaving className="inline text-blue-500 w-8 h-10" /> Hi , I'm
             Md Sahidul Islam Sohel
@@ -21,16 +22,19 @@ const Hero = () => {
           <h1 className="capitalize w-full  text-2xl md:text-4xl mt-3 bg-img-gradient text-transparent bg-clip-text font-bold">
             Building Scalable and user friendly Web apps
           </h1>
-          <p className="w-full  text-xl  mt-4 text-justify">
+          <p className="w-full text-lg md:text-xl  mt-4 text-justify">
             I am a passionate <span className="text-xl font-bold">MERN</span>{" "}
             developer.I really enjoy problem solving, learning languages like
             Javascript, Typescript, Java & libraries/frameworks like Node.js,
             Express.js, React.js & Next.js !
           </p>
           <div className="flex justify-center md:justify-start gap-4 md:gap-8 mt-5">
-            <button className="text-[#4098da] px-4 py-2 border-2 border-primaryy text-lg font-semibold rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+            <Link
+              to="/projects"
+              className="text-[#4098da] px-4 py-2 border-2 border-primaryy text-lg font-semibold rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+            >
               View My Work
-            </button>
+            </Link>
             <button className="bg-img-gradient text-white font-semibold text-lg px-4 py-2 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
               Download Resume
             </button>
