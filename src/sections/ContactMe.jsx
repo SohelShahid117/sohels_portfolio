@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { GoClock } from "react-icons/go";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-scroll";
+import { Link } from "react-router";
+// import { Link } from "react-scroll";
+// import emailjs from "emailjs-com";
 
 const ContactMe = () => {
+  const form = useRef();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+  //       publicKey: "YOUR_PUBLIC_KEY",
+  //     })
+  //     .then(
+  //       () => {
+  //         console.log("SUCCESS!");
+  //         console.log(form);
+  //       },
+  //       (error) => {
+  //         console.log("FAILED...", error.text);
+  //       }
+  //     );
+  // };
   return (
     <section id="contact" className="p-5 container mx-auto">
       <div className="w-full  md:w-3/5 mx-auto mb-5">
@@ -24,7 +45,7 @@ const ContactMe = () => {
       {/* Main Contact Section */}
       <div className="section-container flex flex-col md:flex-row w-full gap-6">
         {/* Contact Info */}
-        <div className="md:w-1/3 px-6 py-4  text-black rounded-2xl border-2">
+        <div className="md:w-1/3 px-6 py-2  text-black rounded-2xl border-2">
           <div className="text-center">
             <h2 className="text-xl font-semibold mb-2">Contact</h2>
             <p>For any kind of query, contact me with the details below.</p>
@@ -42,7 +63,9 @@ const ContactMe = () => {
             <p className="relative mb-2">
               <span className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
                 {/* <IoCall /> */}
-                <FaWhatsapp />
+                <a href="https://wa.me/+8801823012335" target="_blank">
+                  <FaWhatsapp />
+                </a>
               </span>
               <span className="absolute text-md font-semibold mt-0.5">
                 {" "}
@@ -58,26 +81,29 @@ const ContactMe = () => {
               </span>
             </p> */}
             <p className="relative mb-2">
-              <p className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
-                <MdEmail />
-              </p>
+              <span className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
+                <a href="mailto:sohelshahid09@gmail.com" target="_blank">
+                  {" "}
+                  <MdEmail />
+                </a>
+              </span>
               <span className="absolute text-md font-semibold mt-0.5 ml-1.5">
                 sohelshahid09@gmail.com
               </span>
             </p>
             <p className="relative">
-              <p className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
+              <span className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
                 <FaLocationDot />
-              </p>
+              </span>
               <span className="absolute text-md  mt-0.5 ml-1.5">
                 Office No # 25, Central Shopping Complex, O.R Nizam Road , GEC,
                 Nasirabad, Chattogram,Bangladesh.
               </span>
             </p>
-            <p className="relative  my-10 sm:my-5 md:my-25 lg:my-15">
-              <p className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
+            <p className="relative  mt-10 sm:mt-5 md:mt-25 lg:mt-15">
+              <span className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
                 <GoClock />
-              </p>
+              </span>
               <span className="absolute text-md  mt-0.5 ml-1.5">
                 Service Hours: 24/7
               </span>
@@ -89,35 +115,59 @@ const ContactMe = () => {
         <div className="md:w-2/3 px-6 py-4">
           <h3 className="text-lg font-medium mb-2">Get In Touch</h3>
           <h2 className="text-2xl font-bold mb-4">Ask Anything You Need</h2>
-          <form className="space-y-4">
+          <form
+            className="space-y-4"
+            ref={form}
+            // onSubmit={sendEmail}
+            action="https://getform.io/f/aejlqwkb"
+            method="POST"
+          >
             <div className="flex flex-col md:flex-row gap-4">
               <input
                 type="text"
-                placeholder="Name"
+                name="name"
+                placeholder="Your name"
                 className="input input-bordered w-full focus:outline-none"
+                required
               />
+              {/* <input
+                type="email"
+                name="email"
+                // placeholder="Email"
+                value={"sohelshahi09@gmail.com"}
+                className="input input-bordered w-full focus:outline-none"
+                required
+              /> */}
               <input
                 type="email"
-                placeholder="Email"
+                name="your-email"
+                placeholder="Your email"
                 className="input input-bordered w-full focus:outline-none"
+                required
               />
             </div>
             <div className="flex flex-col md:flex-row gap-4">
               <input
                 type="text"
+                name="subject"
                 placeholder="Subject"
                 className="input input-bordered w-full focus:outline-none"
+                required
               />
               <input
                 type="number"
-                placeholder="Contact Number"
+                name="number"
+                placeholder="Contact number"
                 className="input input-bordered w-full focus:outline-none"
+                required
               />
             </div>
             <textarea
               rows="4"
-              placeholder="Your message to me..."
+              name="comment"
+              placeholder="Your message..."
               className="textarea textarea-bordered w-full focus:outline-none"
+              required
             ></textarea>
             <button
               type="submit"

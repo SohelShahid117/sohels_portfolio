@@ -54,8 +54,11 @@ const MyProjects = () => {
                     {project.title}
                   </p>
                   <h1 className="flex flex-wrap text-sm font-bold text-gray-800  ">
-                    {project.tags.map((tag) => (
-                      <span className=" bg-blue-400 text-white mr-2 mt-2 mb-0 py-1 px-2 rounded-xl">
+                    {project.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className=" bg-blue-400 text-white mr-2 mt-2 mb-0 py-1 px-2 rounded-xl"
+                      >
                         {tag}
                       </span>
                     ))}

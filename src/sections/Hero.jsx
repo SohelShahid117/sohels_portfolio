@@ -20,7 +20,7 @@ const Hero = () => {
             Md Sahidul Islam Sohel
           </h3>
           <h1 className="capitalize w-full  text-2xl md:text-4xl mt-3 bg-img-gradient text-transparent bg-clip-text font-bold">
-            Building Scalable and user friendly Web apps
+            Building Scalable and user friendly Web Application
           </h1>
           <p className="w-full text-lg md:text-xl  mt-4 text-justify">
             I am a passionate <span className="text-xl font-bold">MERN</span>{" "}

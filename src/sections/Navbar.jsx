@@ -4,7 +4,7 @@ import ssLogo from "../assets/images/ss_logo.jpeg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { MdOutlineClose } from "react-icons/md";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   const styles = {
@@ -27,29 +27,64 @@ const Navbar = () => {
         <div className="">
           <ul className="hidden md:flex space-x-5 text-lg font-semibold  ">
             <li>
-              <Link to="/" className={styles.link}>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles.link} bg-white text-black`
+                    : `${styles.link}`
+                }
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/skills" className={styles.link}>
+              <NavLink
+                to="/skills"
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles.link} bg-white text-black`
+                    : `${styles.link}`
+                }
+              >
                 Skills
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about" className={styles.link}>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles.link} bg-white text-black`
+                    : `${styles.link}`
+                }
+              >
                 About Me
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects" className={styles.link}>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles.link} bg-white text-black`
+                    : `${styles.link}`
+                }
+              >
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" className={styles.link}>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles.link} bg-white text-black`
+                    : `${styles.link}`
+                }
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -77,49 +112,69 @@ const Navbar = () => {
       {isMenuOpen && (
         <ul className="z-10 flex text-md font-semibold flex-col space-y-5 mt-4 text-center md:hidden">
           <li>
-            <Link
+            <NavLink
               to="/"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`${styles.link} block`}
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.link} bg-white text-black block`
+                  : `${styles.link} block`
+              }
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="skills"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`${styles.link} block`}
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.link} bg-white text-black block`
+                  : `${styles.link} block`
+              }
             >
               Skills
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/about"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`${styles.link} block`}
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.link} bg-white text-black block`
+                  : `${styles.link} block`
+              }
             >
               About Me
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/projects"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`${styles.link} block`}
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.link} bg-white text-black block`
+                  : `${styles.link} block`
+              }
             >
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/contact"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`${styles.link} block`}
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.link} bg-white text-black block`
+                  : `${styles.link} block`
+              }
             >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       )}

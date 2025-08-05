@@ -2,6 +2,7 @@ import {
   FaCss3,
   FaFacebook,
   FaGitAlt,
+  FaGithub,
   FaHtml5,
   FaInstagram,
   FaLinkedin,
@@ -9,7 +10,7 @@ import {
   FaReact,
 } from "react-icons/fa";
 import projectImg1 from "../assets/images/project1.png";
-import projectImg2 from "../assets/images/project1.png";
+import projectImg2 from "../assets/images/project2.png";
 import projectImg3 from "../assets/images/project1.png";
 
 import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si";
@@ -155,14 +156,20 @@ export const menu_links = [
 export const stats = [
   { id: 1, count: "2", label: "Years of \nExperience" },
   { id: 2, count: "3", label: "Certificate \nEarned" },
-  { id: 3, count: "12", label: "Projects \nCompleted" },
-  { id: 4, count: "3", label: "Happy \nClients" },
+  { id: 3, count: "21", label: "Projects \nCompleted" },
+  { id: 4, count: "5", label: "Happy \nClients" },
 ];
 export const about_me = [
   {
     content:
       "Frontend development is an important part of web applications, and it is used to build dynamic and user-friendly web applications with an interactive user interface (UI). Iam a skilled Frontend developers with expertise in HTML, CSS, Tailwind CSS, JavaScript, Typescript and modern frameworks and libraries - React JS, Node JS,Express JS.I have good knowledge about MongoDB database and basic knowledge of problem solving skills.",
     socialIcons: [
+      {
+        id: 5,
+        label: "Github",
+        icon: FaGithub,
+        link: "https://github.com/SohelShahid117",
+      },
       {
         id: 1,
         label: "Facebook",
