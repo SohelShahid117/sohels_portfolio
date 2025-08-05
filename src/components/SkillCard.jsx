@@ -30,7 +30,7 @@ const SkillCard = ({ icon, skillName, progress, description }) => {
             </div>
           </div>
         </div>
-        <p className="text-sm text-gray-700 text-start mt-2">
+        <p className="text-sm md:text-[16px] text-black text-start mt-2">
           {showFullContent ? description : truncatedContent}
           {shouldShowButton && !showFullContent && "..."}
           {shouldShowButton && (

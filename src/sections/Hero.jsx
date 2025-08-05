@@ -43,7 +43,7 @@ const Hero = () => {
         <div className="w-full md:w-1/3 items-center justify-center mx-auto flex flex-col relative  ">
           <img
             src={profilePic}
-            alt=""
+            alt="profile pic"
             className="w-[300px] h-[250px] md:rotate-12 transition-transform duration-500 ease-in-out hover:scale-110 hover:rotate-0 "
           />
           {/* bottom-10 left-15 lg:bottom-12 */}

@@ -17,7 +17,7 @@ const SkillTabs = ({ skillTabs, activeTab, onChange }) => {
             // initial={{ MdOpacity: 0.8, scale: 1 }}
             onClick={() => onChange(skill.value)}
             key={i}
-            className={`text-[#4098da] px-4 sm:px-6 py-2   text-lg font-semibold rounded-full hover:scale-105  transition-all duration-300 ease-in-out mx-2 ${getActiveStyle(
+            className={`text-blue-700 px-4 sm:px-6 py-2   text-lg font-bold rounded-full hover:scale-105  transition-all duration-300 ease-in-out mx-2 ${getActiveStyle(
               skill.value
             )}`}
           >
