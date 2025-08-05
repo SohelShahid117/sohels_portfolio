@@ -1,4 +1,5 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { GoClock } from "react-icons/go";
 import { IoCall } from "react-icons/io5";
@@ -12,7 +13,7 @@ const ContactMe = () => {
         <h4 className="capitalize w-full  text-2xl md:text-4xl mt-3 bg-img-gradient text-transparent bg-clip-text font-bold text-center">
           Contact With Me
         </h4>
-        <p className="text-md text-black mt-4 text-center ">
+        <p className="text-md md:text-lg text-black mt-4 text-center ">
           Technology is vast, and there are so many tools, platforms, languages,
           frameworks coming out in the market. It doesn't matter as I am an
           experienced developer. As a modern developer, I should know how to
@@ -23,10 +24,10 @@ const ContactMe = () => {
       {/* Main Contact Section */}
       <div className="section-container flex flex-col md:flex-row w-full gap-6">
         {/* Contact Info */}
-        <div className="md:w-1/3 px-6 py-4  text-gray-600 rounded-2xl border-2">
+        <div className="md:w-1/3 px-6 py-4  text-black rounded-2xl border-2">
           <div className="text-center">
-            <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
-            <p>For any kind of query, contact us with the details below.</p>
+            <h2 className="text-xl font-semibold mb-2">Contact</h2>
+            <p>For any kind of query, contact me with the details below.</p>
           </div>
           <div className="mt-3 space-y-1">
             <p className="relative mb-2">
@@ -40,21 +41,22 @@ const ContactMe = () => {
             </p>
             <p className="relative mb-2">
               <span className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
-                <IoCall />
+                {/* <IoCall /> */}
+                <FaWhatsapp />
               </span>
               <span className="absolute text-md font-semibold mt-0.5">
                 {" "}
-                01907-077535
+                01823-012335
               </span>
             </p>
-            <p className="relative mb-2">
+            {/* <p className="relative mb-2">
               <p className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
                 <MdEmail />
               </p>
               <span className="absolute text-md font-semibold mt-0.5 ml-1.5">
                 jsholdctg@gmail.com
               </span>
-            </p>
+            </p> */}
             <p className="relative mb-2">
               <p className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
                 <MdEmail />
@@ -68,16 +70,16 @@ const ContactMe = () => {
                 <FaLocationDot />
               </p>
               <span className="absolute text-md  mt-0.5 ml-1.5">
-                Shop No # 25, Central Shopping Complex, O.R Nizam Road , GEC,
+                Office No # 25, Central Shopping Complex, O.R Nizam Road , GEC,
                 Nasirabad, Chattogram,Bangladesh.
               </span>
             </p>
-            <p className="relative  mt-15 mb-2">
+            <p className="relative  my-10 sm:my-5 md:my-25 lg:my-15">
               <p className=" text-xl text-blue-500 inline-flex mr-2 mt-1.5">
                 <GoClock />
               </p>
               <span className="absolute text-md  mt-0.5 ml-1.5">
-                Opening Hours: Saturday - Thursday (9 am - 5 pm)
+                Service Hours: 24/7
               </span>
             </p>
           </div>
@@ -107,19 +109,19 @@ const ContactMe = () => {
                 className="input input-bordered w-full focus:outline-none"
               />
               <input
-                type="text"
+                type="number"
                 placeholder="Contact Number"
                 className="input input-bordered w-full focus:outline-none"
               />
             </div>
             <textarea
               rows="4"
-              placeholder="Your message to us..."
+              placeholder="Your message to me..."
               className="textarea textarea-bordered w-full focus:outline-none"
             ></textarea>
             <button
               type="submit"
-              className="btn bg-primaryy text-white rounded-lg"
+              className="btn text-md md:text-lg font-semibold bg-primaryy text-white rounded-lg"
             >
               Send Now
             </button>
@@ -129,7 +131,7 @@ const ContactMe = () => {
 
       {/* Google Map Placeholder */}
       <div className="section-container mt-0">
-        <h2 className="text-xl font-semibold mb-2">Our Location : </h2>
+        <h2 className="text-xl font-semibold my-2">My Location : </h2>
         <div className="w-full  rounded-lg flex items-center justify-center text-gray-500">
           <iframe
             className="w-full py-5"

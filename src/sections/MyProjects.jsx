@@ -14,7 +14,7 @@ const MyProjects = () => {
           <h4 className="capitalize w-full  text-2xl md:text-4xl mt-3 bg-img-gradient text-transparent bg-clip-text font-bold text-center">
             Recent Projects
           </h4>
-          <p className="text-md text-black mt-4 text-center ">
+          <p className="text-md md:text-lg text-black mt-4 text-center ">
             From concept to deployment these project shows my technical
             expertise . I focus on clean code ,performance and user experience
           </p>

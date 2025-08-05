@@ -101,15 +101,15 @@ export const skills = [
     description:
       "MongoDB is one of the most popular NoSQL databases, known for its flexibility, scalability, and ability to handle unstructured data. Many top companies rely on MongoDB, making it an essential skill for developers. Whether you’re starting your career or looking to level up, preparing well for your MongoDB interview is the key to success.",
   },
-  {
-    id: 10,
-    icon: GrMysql,
-    skill: "Mysql",
-    progress: 80,
-    type: "backend",
-    description:
-      "MySQL is an open-source Relational Database Management System(RDMS) that organizes data in tables using rows and columns. It uses Structured Query Language (SQL) for managing and manipulating databases. It was originally developed by MySQL AB, a Swedish company, and is now owned by Oracle Corporation. It's known for its high performance, reliability, and ease of use, making it one of the most widely used databases globally for web applications, data storage, and software development.",
-  },
+  // {
+  //   id: 10,
+  //   icon: GrMysql,
+  //   skill: "Mysql",
+  //   progress: 80,
+  //   type: "backend",
+  //   description:
+  //     "MySQL is an open-source Relational Database Management System(RDMS) that organizes data in tables using rows and columns. It uses Structured Query Language (SQL) for managing and manipulating databases. It was originally developed by MySQL AB, a Swedish company, and is now owned by Oracle Corporation. It's known for its high performance, reliability, and ease of use, making it one of the most widely used databases globally for web applications, data storage, and software development.",
+  // },
   {
     id: 11,
     icon: FaGitAlt,
@@ -161,12 +161,32 @@ export const stats = [
 export const about_me = [
   {
     content:
-      "Frontend development is an important part of web applications, and it is used to build dynamic and user-friendly web applications with an interactive user interface (UI). I skilled Frontend developers with expertise in HTML, CSS, JavaScript, and modern frameworks and libraries - React, Nodejs.",
+      "Frontend development is an important part of web applications, and it is used to build dynamic and user-friendly web applications with an interactive user interface (UI). Iam a skilled Frontend developers with expertise in HTML, CSS, Tailwind CSS, JavaScript, Typescript and modern frameworks and libraries - React JS, Node JS,Express JS.I have good knowledge about MongoDB database and basic knowledge of problem solving skills.",
     socialIcons: [
-      { id: 1, label: "Facebook", icon: FaFacebook, link: "#" },
-      { id: 2, label: "Instagram", icon: FaInstagram, link: "#" },
-      { id: 3, label: "XTwitter", icon: FaXTwitter, link: "#" },
-      { id: 4, label: "Linkedin", icon: FaLinkedin, link: "#" },
+      {
+        id: 1,
+        label: "Facebook",
+        icon: FaFacebook,
+        link: "https://www.facebook.com/profile.php?id=100084295832172",
+      },
+      {
+        id: 2,
+        label: "Instagram",
+        icon: FaInstagram,
+        link: "https://www.facebook.com/profile.php?id=100084295832172",
+      },
+      {
+        id: 3,
+        label: "XTwitter",
+        icon: FaXTwitter,
+        link: "https://www.facebook.com/profile.php?id=100084295832172",
+      },
+      {
+        id: 4,
+        label: "Linkedin",
+        icon: FaLinkedin,
+        link: "https://www.facebook.com/profile.php?id=100084295832172",
+      },
     ],
     email: "sohelshahid09@gmail.com",
     phone: "+8801823-012335",
