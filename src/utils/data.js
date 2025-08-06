@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import projectImg1 from "../assets/images/project1.png";
 import projectImg2 from "../assets/images/project2.png";
-import projectImg3 from "../assets/images/project1.png";
+import projectImg3 from "../assets/images/project3.png";
 
 import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
