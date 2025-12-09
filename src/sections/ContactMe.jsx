@@ -96,8 +96,7 @@ const ContactMe = () => {
                 <FaLocationDot />
               </span>
               <span className="absolute text-md  mt-0.5 ml-1.5">
-                Office No # 25, Central Shopping Complex, O.R Nizam Road , GEC,
-                Nasirabad, Chattogram,Bangladesh.
+                Bahaddarhat, Chattogram,Bangladesh.
               </span>
             </p>
             <p className="relative  mt-10 sm:mt-5 md:mt-25 lg:mt-15">

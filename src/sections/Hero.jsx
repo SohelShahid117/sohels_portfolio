@@ -25,8 +25,8 @@ const Hero = () => {
           <p className="w-full text-lg md:text-xl  mt-4 text-justify">
             I am a passionate <span className="text-xl font-bold">MERN</span>{" "}
             developer.I really enjoy problem solving, learning languages like
-            Javascript, Typescript, Java & libraries/frameworks like Node.js,
-            Express.js, React.js & Next.js !
+            Javascript, Typescript, Python & libraries/frameworks like Node.js,
+            Express.js, React.js, Next.js, MongoDB, Mongoose !
           </p>
           <div className="flex justify-center md:justify-start gap-4 md:gap-8 mt-5">
             <Link
@@ -35,9 +35,13 @@ const Hero = () => {
             >
               View My Work
             </Link>
-            <button className="bg-img-gradient text-white font-semibold text-lg px-4 py-2 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+            <Link
+              target="_blank"
+              to="https://docs.google.com/document/d/1fSUZQBFAwPXnb0JYvL3EfpCIM_gaLiiPFadPF4GdLLg/edit?tab=t.0"
+              className="bg-img-gradient text-white font-semibold text-lg px-4 py-2 rounded-full hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+            >
               Download Resume
-            </button>
+            </Link>
           </div>
         </div>
         <div className="w-full md:w-1/3 items-center justify-center mx-auto flex flex-col relative  ">
